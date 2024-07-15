@@ -1,3 +1,12 @@
+:root {
+  --primary-color: #78AB46; /* Verde suave */
+  --secondary-color: #F5F5F5; /* Blanco crema */
+  --accent-color: #333333; /* Gris oscuro */
+  --text-color: #333333; /* Texto gris oscuro */
+  --font-family: 'Arial', sans-serif; /* Fuente Arial */
+  --beige-color: #F0EDE6; /* Tono beige */
+}
+
 .App {
   text-align: center;
 }
@@ -14,7 +23,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--accent-color); /* Cambio a gris oscuro */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +34,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--primary-color); /* Cambio al verde suave */
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +44,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.app-container {
+  position: relative;
+  min-height: 100vh; /* Asegura que ocupe al menos el alto completo del viewport */
+  padding-bottom: 60px; /* Ajusta el padding inferior para dejar espacio para el footer */
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--accent-color); /* Cambio a gris oscuro */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
 }

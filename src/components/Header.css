@@ -1,0 +1,79 @@
+:root {
+  --primary-color: #78AB46;
+  --secondary-color: #F5F5F5;
+  --accent-color: #333333;
+  --text-color: #333333;
+  --font-family: 'Arial', sans-serif;
+  --beige-color: #F0EDE6;
+}
+
+.header {
+  background-color: var(--beige-color);
+  padding: 1.5rem;
+  border-bottom: 2.5px solid var(--primary-color);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-family: var(--font-family);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+  margin-right: 1rem;
+}
+
+.nav-links li {
+  color: var(--primary-color);
+  font-family: var(--font-family);
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: var(--accent-color);
+}
+
+.search-form {
+  display: flex;
+}
+
+.search-input {
+  padding: 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.search-button {
+  padding: 10px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: var(--accent-color);
+}

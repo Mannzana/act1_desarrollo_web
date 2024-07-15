@@ -1,0 +1,86 @@
+:root {
+  --primary-color: #78AB46; /* Verde suave */
+  --secondary-color: #F5F5F5; /* Blanco crema */
+  --accent-color: #333333; /* Gris oscuro */
+  --text-color: #333333; /* Texto gris oscuro */
+  --font-family: 'Arial', sans-serif; /* Fuente Arial */
+  --beige-color: #F0EDE6; /* Tono beige */
+  --dark-gray: #534D48; /* Gris oscuro */
+}
+
+.cart-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: var(--font-family);
+}
+
+.cart-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: var(--beige-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remove-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: var(--dark-gray);
+}
+
+.checkout-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.checkout-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+  background-color: var(--accent-color);
+}
+
+.removed-message {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 9999;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

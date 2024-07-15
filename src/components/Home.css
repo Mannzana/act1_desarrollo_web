@@ -1,0 +1,155 @@
+:root {
+  --primary-color: #78AB46; /* Verde suave */
+  --secondary-color: #F5F5F5; /* Blanco crema */
+  --accent-color: #333333; /* Gris oscuro */
+  --text-color: #333333; /* Texto gris oscuro */
+  --font-family: 'Arial', sans-serif; /* Fuente Arial */
+  --beige-color: #F0EDE6; /* Tono beige */
+}
+
+.home {
+  padding: 20px;
+  background-color: var(--secondary-color);
+  font-family: var(--font-family);
+}
+
+.home__header {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 40px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.home__title {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.home__subtitle {
+  font-size: 1.2em;
+  color: var(--light-color);
+}
+
+.home__about {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: var(--beige-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: 80px auto; 
+}
+
+
+.home__section-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.home__about-text {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: var(--text-color);
+  text-align: justify;
+}
+
+.home__featured-products {
+  margin-bottom: 40px;
+}
+
+.home__products-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.home__product-item {
+  background-color: var(--beige-color);
+  color: var(--text-color);
+  padding: 20px;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home__product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.home__product-name {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.home__product-price {
+  font-size: 1.2em;
+}
+
+.home__benefits {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: var(--beige-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: 80px auto;
+}
+
+.home__benefits-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.home__benefit-item {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: var(--text-color);
+  padding-left: 20px;
+  position: relative;
+}
+
+.home__benefit-item::before {
+  content: '✔';
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  font-size: 1.2em;
+}
+
+.home__cta {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: var(--beige-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: 40px auto;
+}
+
+.home__cta-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home__cta-button:hover {
+  background-color: var(--accent-color);
+}
