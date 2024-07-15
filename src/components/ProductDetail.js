@@ -14,7 +14,6 @@ function ProductDetail({ products, addToCart }) {
     addToCart(product);
   };
 
-  // Generar una descripción básica
   const generateDescription = (productName) => {
     return `Este producto es un ${productName} coreano.`;
   };

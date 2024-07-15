@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css'; // Ajusta la ruta según la ubicación real de App.css
+import '../App.css';
 
 function Footer() {
   return (

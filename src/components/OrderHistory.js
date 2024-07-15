@@ -13,9 +13,9 @@ function OrderHistory({ orderHistory }) {
 
   const handleReturnOrder = (orderIndex) => {
     const updatedStatus = { ...returnStatus };
-    updatedStatus[orderIndex] = true; // Marcar el pedido como en proceso de devolución
+    updatedStatus[orderIndex] = true;
     setReturnStatus(updatedStatus);
-    localStorage.setItem('returnStatus', JSON.stringify(updatedStatus)); // Guardar en el localStorage
+    localStorage.setItem('returnStatus', JSON.stringify(updatedStatus));
   };
 
   const isOrderInReturnProcess = (orderIndex) => {

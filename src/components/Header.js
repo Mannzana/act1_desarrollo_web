@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Header.css'; // Importa el archivo de estilos CSS
+import './Header.css'; 
 
 function Header() {
   return (
@@ -12,7 +12,7 @@ function Header() {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/products">Products</Link></li>
             <li><Link to="/cart">Cart</Link></li>
-            <li><Link to="/order-history">Order History</Link></li> {/* Nuevo enlace al historial de pedidos */}
+            <li><Link to="/order-history">Order History</Link></li> {}
           </ul>
           <div className="search-form">
             <input type="text" placeholder="Search..." className="search-input" />

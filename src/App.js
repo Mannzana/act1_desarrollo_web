@@ -25,14 +25,11 @@ function App() {
     { id: 9, name: 'Exfoliante 1', price: 19.99, category: 'Exfoliantes' }
   ]);
 
-  // Utiliza el custom hook useShoppingCart para gestionar el estado del carrito
   const { cartItems, addToCart, removeFromCart, clearCart } = useShoppingCart([]);
 
   const handleCheckout = () => {
     if (cartItems.length > 0) {
-      // Lógica para completar el checkout
-      clearCart(); // Ejemplo de cómo limpiar el carrito después del checkout
-      // Navegación a la página de checkout si es necesario
+      clearCart();
     }
   };
 

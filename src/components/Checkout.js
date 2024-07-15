@@ -4,8 +4,7 @@ import './Checkout.css';
 const Checkout = () => {
   const [shippingInfo, setShippingInfo] = useState({ address: '', city: '', zip: '' });
   const [paymentInfo, setPaymentInfo] = useState({ cardNumber: '', expiryDate: '', cvv: '' });
-  const [orderPlaced, setOrderPlaced] = useState(false); // Estado para controlar si se ha realizado el pedido
-
+  const [orderPlaced, setOrderPlaced] = useState(false);
   const handleShippingChange = (e) => {
     const { name, value } = e.target;
     setShippingInfo(prevState => ({ ...prevState, [name]: value }));
@@ -18,14 +17,11 @@ const Checkout = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí iría la lógica para procesar el pago y el envío
     console.log('Shipping Info:', shippingInfo);
     console.log('Payment Info:', paymentInfo);
-    // Simulación de procesamiento
     setTimeout(() => {
-      // Aquí se supone que se completó el procesamiento del pedido
       setOrderPlaced(true);
-    }, 2000); // Simulación de un proceso de 2 segundos para efectos de demostración
+    }, 2000); 
   };
 
   return (

@@ -1,13 +1,12 @@
 :root {
-  --primary-color: #78AB46; /* Verde suave */
-  --secondary-color: #F5F5F5; /* Blanco crema */
-  --accent-color: #333333; /* Gris oscuro */
-  --text-color: #333333; /* Texto gris oscuro */
-  --font-family: 'Arial', sans-serif; /* Fuente Arial */
-  --beige-color: #F0EDE6; /* Tono beige */
+  --primary-color: #78AB46;
+  --secondary-color: #F5F5F5;
+  --accent-color: #333333;
+  --text-color: #333333;
+  --font-family: 'Arial', sans-serif;
+  --beige-color: #F0EDE6;
 }
 
-/* Estilos para el header */
 .header {
   background-color: var(--beige-color);
   padding: 1.5rem;
@@ -79,7 +78,6 @@
   background-color: var(--dark-gray);
 }
 
-/* Otros estilos */
 .home {
   padding: 20px;
   background-color: var(--secondary-color);
@@ -106,4 +104,3 @@
   color: var(--light-color);
 }
 
-/* Ajusta otros estilos según necesites */

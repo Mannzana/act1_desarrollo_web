@@ -7,15 +7,11 @@ function ReturnOrder({ returnOrder }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí podrías validar los campos y enviar la solicitud de devolución
-    // Por simplicidad, sólo consoleamos la información para este ejemplo
     console.log('Order ID:', orderId);
     console.log('Reason:', reason);
     
-    // Llamar a la función de devolución proporcionada por el padre
     returnOrder({ orderId, reason });
 
-    // Limpiar los campos después de enviar
     setOrderId('');
     setReason('');
   };

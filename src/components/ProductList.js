@@ -4,7 +4,7 @@ import './ProductList.css';
 
 function ProductList({ products, addToCart }) {
   const [notification, setNotification] = useState({ show: false, productName: '' });
-  const [currentCategory, setCurrentCategory] = useState('All'); // Estado para la categoría actual
+  const [currentCategory, setCurrentCategory] = useState('All');
 
   const handleCategoryChange = (category) => {
     setCurrentCategory(category);
@@ -14,22 +14,19 @@ function ProductList({ products, addToCart }) {
     addToCart(product);
     setNotification({ show: true, productName: product.name });
 
-    // Ocultar la notificación después de 2 segundos
     setTimeout(() => {
       setNotification({ show: false, productName: '' });
     }, 2000);
   };
 
-  // Filtrar productos por categoría
   const filteredProducts = currentCategory === 'All' ? products : products.filter(product => product.category === currentCategory);
 
-  // Obtener categorías únicas para los controles de selección
   const categories = ['All', 'Limpiadores', 'Tónicos', 'Esencias', 'Serums', 'Mascarillas', 'Cremas', 'Protectores Solares', 'Exfoliantes'];
 
   return (
     <div className="product-list">
       <h2 className="product-list-title">Products</h2>
-      {/* Controles de selección de categoría */}
+      {}
       <div className="category-controls">
         {categories.map((category) => (
           <button key={category} onClick={() => handleCategoryChange(category)} className={category === currentCategory ? 'active' : ''}>

@@ -7,7 +7,6 @@ function Cart({ cartItems, removeFromCart, onCheckout }) {
   const [removedMessage, setRemovedMessage] = useState('');
   const [totalPrice, setTotalPrice] = useState(0);
 
-  // Calcular el precio total del carrito
   const calculateTotalPrice = () => {
     const total = cartItems.reduce((acc, item) => acc + item.price, 0);
     setTotalPrice(total);
@@ -19,25 +18,23 @@ function Cart({ cartItems, removeFromCart, onCheckout }) {
 
   const handleCheckout = () => {
     if (cartItems.length > 0) {
-      // Lógica para procesar el pedido (simulada por onCheckout)
-      onCheckout(); // Llama a la función de checkout proporcionada por el padre
+      onCheckout();
 
-      // Limpiar el carrito después de completar el checkout
       const itemIdsToRemove = cartItems.map(item => item.id);
-      removeFromCart(itemIdsToRemove); // Eliminar productos del carrito
-      setRemovedMessage('Cart items removed after checkout.'); // Mensaje de eliminación
-      setTotalPrice(0); // Reiniciar el precio total a cero
-      navigate('/checkout'); // Redirigir a la página de checkout
+      removeFromCart(itemIdsToRemove);
+      setRemovedMessage('Cart items removed after checkout.');
+      setTotalPrice(0);
+      navigate('/checkout');
     }
   };
 
   const handleRemove = (id, name) => {
-    removeFromCart(id); // Lógica para remover un item del carrito
-    setRemovedMessage(`${name} removed from cart`); // Establecer el mensaje de eliminación
+    removeFromCart(id);
+    setRemovedMessage(`${name} removed from cart`);
     setTimeout(() => {
       setRemovedMessage('');
-    }, 3000); // Limpiar el mensaje después de 3 segundos
-    calculateTotalPrice(); // Recalcular el precio total después de la eliminación
+    }, 3000);
+    calculateTotalPrice();
   };
 
   return (
@@ -62,7 +59,7 @@ function Cart({ cartItems, removeFromCart, onCheckout }) {
           <button onClick={handleCheckout} className="checkout-button">Proceed to Checkout</button>
         </div>
       )}
-      {/* Mostrar el mensaje de eliminación */}
+      {}
       {removedMessage && <div className="removed-message">{removedMessage}</div>}
     </div>
   );

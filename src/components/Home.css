@@ -1,10 +1,10 @@
 :root {
-  --primary-color: #78AB46; /* Verde suave */
-  --secondary-color: #F5F5F5; /* Blanco crema */
-  --accent-color: #333333; /* Gris oscuro */
-  --text-color: #333333; /* Texto gris oscuro */
-  --font-family: 'Arial', sans-serif; /* Fuente Arial */
-  --beige-color: #F0EDE6; /* Tono beige */
+  --primary-color: #78AB46;
+  --secondary-color: #F5F5F5;
+  --accent-color: #333333;
+  --text-color: #333333;
+  --font-family: 'Arial', sans-serif;
+  --beige-color: #F0EDE6;
 }
 
 .home {
